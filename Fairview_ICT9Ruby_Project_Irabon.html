@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length conversions :D</title>
+    <style type="text/css">
+       body {
+  background-position:center;
+  background-image:url("spoopy house.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+</style>
+</head>
+<body text="text-align center">
+  <script>function centimil(){
+     let a = parseInt(document.getElementById("operandOne").value);
+     let b = 10;
+     alert(a/b);
+}
+function metmil(){
+    let a = parseInt(document.getElementById("operandOne").value);
+    let b = 1000;
+    alert(a/b);
+}
+function kilomil(){
+    let a = parseInt(document.getElementById("operandOne").value);
+    let b = 1000000;
+    alert(a/b);
+}
+</script>
+<div class="col-lg-2 column" style="margin-left: 50px; padding: 10px;">
+ <table cellpadding="5" width="100%" style="text-align: center;"> <tr><td><h1>LENGTH CONVERSIONS :D</h1></tr></td></table>
+            <hr>
+ <table cellpadding="5" width="100%" style="text-align: center;">
+            <input type="number" id="operandOne">
+            <br><br>
+    <button  class="btn btn-light btn-block" onclick="centimil();">centimeters</button>
+     <button  class="btn btn-light btn-block" onclick="metmil();">meters</button>
+    <button  class="btn btn-light btn-block" onclick="kilomil();">kilometers</button>
+    <br><br>
+        </div>
+      </table>
+</body>
+</html>
